@@ -1,0 +1,9 @@
+#! /bin/bash
+rm results/scenario1/256k/LTP-UDP-256k-128b.txt
+rm results/scenario1/256k/LTP-TCP-256k-128b.txt
+rm results/scenario2/256k/LTP-UDP-256k-512b.txt
+rm results/scenario2/256k/LTP-TCP-256k-512b.txt
+rm results/scenario3/256k/LTP-UDP-256k-1024b.txt
+rm results/scenario3/256k/LTP-TCP-256k-1024b.txt
+rm results/scenario4/256k/LTP-UDP-256k-1448b.txt
+rm results/scenario4/256k/LTP-TCP-256k-1448b.txt

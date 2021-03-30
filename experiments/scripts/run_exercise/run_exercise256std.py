@@ -303,12 +303,12 @@ class ExerciseRunner:
         
         h1.cmd('ping -c10 %s' % h4.IP())
         h1.cmd('cp logs/* results/before/256k/STD/logs/')
-        h1.cmd('./scripts/clean/clean_logs.sh')
+        h1.cmd('../experiments/scripts/clean/clean_logs.sh')
 
         h1.cmd('cp pcaps/* results/before/256k/STD/pcaps/')
-        h1.cmd('./scripts/clean/clean_pcaps.sh')
+        h1.cmd('../experiments/scripts/clean/clean_pcaps.sh')
         
-        h1.cmd('./scripts/clean/clean_256STD.sh')
+        ##h1.cmd('../experiments/scripts/clean/clean_256STD.sh')
         """
         print '=========================================='
         print ' Scenario1 UDP - 256k - Payload 128 Bytes '
@@ -320,11 +320,11 @@ class ExerciseRunner:
         sleep(5)
 
         h1.cmd('cp logs/* results/scenario1/256k/STD/udp/logs/')
-        h1.cmd('./scripts/clean/clean_logs.sh')
+        h1.cmd('../experiments/scripts/clean/clean_logs.sh')
 
         h1.cmd('cp pcaps/* results/scenario1/256k/STD/udp/pcaps/')
-        h1.cmd('./scripts/clean/clean_pcaps.sh')
-        """
+        h1.cmd('../experiments/scripts/clean/clean_pcaps.sh')
+        
         print '=========================================='
         print ' Scenario1 TCP - 256k - Payload 128 Bytes '
         print '=========================================='
@@ -335,11 +335,11 @@ class ExerciseRunner:
         sleep(5)
         
         h1.cmd('cp logs/* results/scenario1/256k/STD/tcp/logs/')
-        h1.cmd('./scripts/clean/clean_logs.sh')
+        h1.cmd('../experiments/scripts/clean/clean_logs.sh')
 
         h1.cmd('cp pcaps/* results/scenario1/256k/STD/tcp/pcaps/')
-        h1.cmd('./scripts/clean/clean_pcaps.sh')
-        """
+        h1.cmd('../experiments/scripts/clean/clean_pcaps.sh')
+        
         print '=========================================='
         print ' Scenario2 UDP - 256k - Payload 512 Bytes '
         print '=========================================='
@@ -350,11 +350,11 @@ class ExerciseRunner:
         sleep(5)
 
         h1.cmd('cp logs/* results/scenario2/256k/STD/udp/logs/')
-        h1.cmd('./scripts/clean/clean_logs.sh')
+        h1.cmd('../experiments/scripts/clean/clean_logs.sh')
 
         h1.cmd('cp pcaps/* results/scenario2/256k/STD/udp/pcaps/')
-        h1.cmd('./scripts/clean/clean_pcaps.sh')
-        """
+        h1.cmd('../experiments/scripts/clean/clean_pcaps.sh')
+        
         print '=========================================='
         print ' Scenario2 TCP - 256k - Payload 512 Bytes '
         print '=========================================='
@@ -365,11 +365,11 @@ class ExerciseRunner:
         sleep(5)
         
         h1.cmd('cp logs/* results/scenario2/256k/STD/tcp/logs/')
-        h1.cmd('./scripts/clean/clean_logs.sh')
+        h1.cmd('../experiments/scripts/clean/clean_logs.sh')
 
         h1.cmd('cp pcaps/* results/scenario2/256k/STD/tcp/pcaps/')
-        h1.cmd('./scripts/clean/clean_pcaps.sh')
-        """
+        h1.cmd('../experiments/scripts/clean/clean_pcaps.sh')
+        
         print '=========================================='
         print ' Scenario3 UDP - 256k - Payload 1024 Bytes '
         print '=========================================='
@@ -380,11 +380,11 @@ class ExerciseRunner:
         sleep(5)
 
         h1.cmd('cp logs/* results/scenario3/256k/STD/udp/logs/')
-        h1.cmd('./scripts/clean/clean_logs.sh')
+        h1.cmd('../experiments/scripts/clean/clean_logs.sh')
 
         h1.cmd('cp pcaps/* results/scenario3/256k/STD/udp/pcaps/')
-        h1.cmd('./scripts/clean/clean_pcaps.sh')
-        """
+        h1.cmd('../experiments/scripts/clean/clean_pcaps.sh')
+        
         print '=========================================='
         print ' Scenario3 TCP - 256k - Payload 1024 Bytes '
         print '=========================================='
@@ -395,11 +395,11 @@ class ExerciseRunner:
         sleep(5)
         
         h1.cmd('cp logs/* results/scenario3/256k/STD/tcp/logs/')
-        h1.cmd('./scripts/clean/clean_logs.sh')
+        h1.cmd('../experiments/scripts/clean/clean_logs.sh')
 
         h1.cmd('cp pcaps/* results/scenario3/256k/STD/tcp/pcaps/')
-        h1.cmd('./scripts/clean/clean_pcaps.sh')
-        """
+        h1.cmd('../experiments/scripts/clean/clean_pcaps.sh')
+        
         print '=========================================='
         print ' Scenario4 UDP - 256k - Payload MTU Bytes '
         print '=========================================='
@@ -410,10 +410,10 @@ class ExerciseRunner:
         sleep(5)
 
         h1.cmd('cp logs/* results/scenario4/256k/STD/udp/logs/')
-        h1.cmd('./scripts/clean/clean_logs.sh')
+        h1.cmd('../experiments/scripts/clean/clean_logs.sh')
 
         h1.cmd('cp pcaps/* results/scenario4/256k/STD/udp/pcaps/')
-        h1.cmd('./scripts/clean/clean_pcaps.sh')
+        h1.cmd('../experiments/scripts/clean/clean_pcaps.sh')
         """
         print '=========================================='
         print ' Scenario4 TCP - 256k - Payload MTU Bytes '
@@ -425,10 +425,10 @@ class ExerciseRunner:
         sleep(5)
         
         h1.cmd('cp logs/* results/scenario4/256k/STD/tcp/logs/')
-        h1.cmd('./scripts/clean/clean_logs.sh')
+        h1.cmd('../experiments/scripts/clean/clean_logs.sh')
 
         h1.cmd('cp pcaps/* results/scenario4/256k/STD/tcp/pcaps/')
-        h1.cmd('./scripts/clean/clean_pcaps.sh')
+        h1.cmd('../experiments/scripts/clean/clean_pcaps.sh')
         
         print '====================================='
         print '    Ending..................   '

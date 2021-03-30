@@ -1,7 +1,7 @@
 {
   "target": "bmv2",
-  "p4info": "std/ltp_proto.p4.p4info.txt",
-  "bmv2_json": "std/ltp_proto.json",
+  "p4info": "build/ltp-proto.p4.p4info.txt",
+  "bmv2_json": "build/ltp-proto.json",
   "table_entries": [
     {
       "table": "MyIngress.ipv4_lpm",

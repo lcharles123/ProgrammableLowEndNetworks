@@ -127,4 +127,60 @@ mininet>
 
 NOTE: You can only run ping commands between nodes that are not connected to the same switch. For example, a ping command between h1 and h2 will not work. This is because switch s1 is not configured with the table rules to make traffic flow between nodes connected to a same switch.
 
+### Running iperf3 within the experiment
+
+Here, we are going to test the links using iperf3 tool. Before you proceed, you must have iperf3 installed.
+
+```
+(terminal 0)# apt-get install iperf3
+```
+
+Also, you need to make sure that the switch tables are configured between the hosts that will exchange the iperf3 flow. To this end, simply issue a ping command between the nodes that you will use for iperf3. For example:
+
+```
+mininet> h1 ping h4
+```
+
+At this point, run script ./run-me.sh and after that run the three controllers. Once you are in the mininet prompt, you must open a terminal window for each host you want to experiment with iperf3. Assuming we are taking h1 and h4:
+
+```
+mininet> xterm h1 h4
+```
+
+Now, in xterm h1, run the server:
+
+```
+(Node: h1)# iperf3 -s
+-----------------------------------------------------------
+Server listening on 5201
+-----------------------------------------------------------
+```
+
+Now, in xterm h4, run the client, that will send a flow of UDP packets to the server, and report every one second the statistics:
+
+```
+(Node: h4)# iperf3 -c 10.0.1.1 -u -i 1 (10.0.1.1 is the ip address of h1)
+Connecting to host 10.0.1.1, port 5201
+[ 36] local 10.0.2.1 port 49960 connected to 10.0.1.1 port 5201
+[ ID] Interval           Transfer     Bandwidth       Total Datagrams
+[ 36]   0.00-1.00   sec   120 KBytes   983 Kbits/sec  15  
+[ 36]   1.00-2.00   sec   128 KBytes  1.05 Mbits/sec  16  
+[ 36]   2.00-3.00   sec   128 KBytes  1.05 Mbits/sec  16  
+[ 36]   3.00-4.00   sec   128 KBytes  1.05 Mbits/sec  16  
+[ 36]   4.00-5.00   sec   128 KBytes  1.05 Mbits/sec  16  
+[ 36]   5.00-6.00   sec   128 KBytes  1.05 Mbits/sec  16  
+[ 36]   6.00-7.00   sec   128 KBytes  1.05 Mbits/sec  16  
+[ 36]   7.00-8.01   sec   128 KBytes  1.04 Mbits/sec  16  
+[ 36]   8.01-9.00   sec   128 KBytes  1.05 Mbits/sec  16  
+[ 36]   9.00-10.00  sec   128 KBytes  1.05 Mbits/sec  16  
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bandwidth       Jitter    Lost/Total Datagrams
+[ 36]   0.00-10.00  sec  1.24 MBytes  1.04 Mbits/sec  0.000 ms  0/0 (-nan%)  
+[ 36] Sent 0 datagrams
+
+iperf Done.
+```
+
+### Finishing the Experiments
+
 To kill the experiment, simply type CTRL+C or CTRL+D in the mininet prompt.

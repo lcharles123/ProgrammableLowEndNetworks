@@ -271,8 +271,8 @@ class ExerciseRunner:
         """
         # Initialize mininet with the topology specified by the config
         self.create_network()
-        ##swobj = self.net.get('s1')
-        ##Intf('enp0s3',node=swobj)
+        swobj = self.net.get('s1')
+        Intf('enp0s3',node=swobj)
         self.net.start()
         sleep(1)
 

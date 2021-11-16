@@ -305,11 +305,11 @@ class ExerciseRunner:
         h1.cmd('ping -c10 sbrc2010.inf.ufrgs.br')
         
         h1.cmd('cp logs/* results/before/scenario7/logs/')
-        h1.cmd('./scripts/clean/clean_logs.sh')
+        h1.cmd('../experiments/scripts/clean/clean_logs.sh')
 
-        h1.cmd('./scripts/clean/clean_pcaps.sh')
+        h1.cmd('../experiments/scripts/clean/clean_pcaps.sh')
         
-        h1.cmd('./scripts/clean/clean_scenario7STD.sh')
+        h1.cmd('../experiments/scripts/clean/clean_scenario7STD.sh')
 
         
         print '=========================================='
@@ -320,10 +320,10 @@ class ExerciseRunner:
         sleep(5)
 
         h1.cmd('cp logs/* results/scenario7/STD/logs/')
-        h1.cmd('./scripts/clean/clean_logs.sh')
+        h1.cmd('../experiments/scripts/clean/clean_logs.sh')
 
         h1.cmd('cp pcaps/* results/scenario7/STD/pcaps/')
-        h1.cmd('./scripts/clean/clean_pcaps.sh')
+        h1.cmd('../experiments/scripts/clean/clean_pcaps.sh')
         
         print '====================================='
         print '    Ending..................   '

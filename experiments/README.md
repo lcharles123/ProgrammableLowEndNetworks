@@ -58,8 +58,6 @@ experiments/scripts/backup/ => has a backup of the standard ltp-proto.p4, run_ex
 
 experiments/scripts/clean/ => has cleanup and startup scripts. The cleaning scripts (which start with the name clean) are called by the experiment scripts. The begin.sh script is used to create or recreate the structure where the results of the experiments will be stored, as we will see below.
 
-experiments/scripts/controller/ => has a specific version of the controllers for scenario 6 (with a larger number of hosts per switch, and therefore needs a change in the multicast group).
-
 experiments/scripts/graphics/ => has scripts and files for generating graphics stored in experiments/plots/
 
 experiments/scripts/run_exercise/ => has versions of run_exercise.py specific to each experiment with the necessary adjustments for protocol variation (TCP and UDP), payload size (128 bytes, 512 bytes, 1024 bytes and limited to the MTU size ) and bandwidth speed defined in the topology.json file. These files are copied by the script for each experiment.

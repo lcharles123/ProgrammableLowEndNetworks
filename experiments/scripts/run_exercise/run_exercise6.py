@@ -337,12 +337,12 @@ class ExerciseRunner:
         sleep(5)
 
         h1.cmd('cp logs/* results/before/scenario6/logs/')
-        h1.cmd('./scripts/clean/clean_logs.sh')
+        h1.cmd('../experiments/scripts/clean/clean_logs.sh')
 
         h1.cmd('cp pcaps/* results/before/scenario6/pcaps/')
-        h1.cmd('./scripts/clean/clean_pcaps6.sh')
+        h1.cmd('../experiments/scripts/clean/clean_pcaps6.sh')
 
-        h1.cmd('./scripts/clean/clean_scenario6.sh')
+        h1.cmd('../experiments/scripts/clean/clean_scenario6.sh')
 
         
         print '=========================================='
@@ -354,15 +354,15 @@ class ExerciseRunner:
         h3.cmd('iperf3 -s -i 30 --logfile results/scenario6/LTP-TCP-256k-1448b-h3-h8.txt &')
         h4.cmd('iperf3 -s -i 30 --logfile results/scenario6/LTP-TCP-256k-1448b-h4-h9.txt &')
         h5.cmd('iperf3 -s -i 30 --logfile results/scenario6/LTP-TCP-256k-1448b-h5-h10.txt &')                
-        print 'Iperf from %s to %s' % (h1.IP(), h6.IP())
+        print 'Iperf3 from %s to %s' % (h1.IP(), h6.IP())
         h6.cmd('iperf3 -4 -c %s -t 900 -i 30 -b 256k &' % h1.IP())
-        print 'Iperf from %s to %s' % (h2.IP(), h7.IP())
+        print 'Iperf3 from %s to %s' % (h2.IP(), h7.IP())
         h7.cmd('iperf3 -4 -c %s -t 900 -i 30 -b 256k &' % h2.IP())
-        print 'Iperf from %s to %s' % (h3.IP(), h8.IP())
+        print 'Iperf3 from %s to %s' % (h3.IP(), h8.IP())
         h8.cmd('iperf3 -4 -c %s -t 900 -i 30 -b 256k &' % h3.IP())
-        print 'Iperf from %s to %s' % (h4.IP(), h9.IP())
+        print 'Iperf3 from %s to %s' % (h4.IP(), h9.IP())
         h9.cmd('iperf3 -4 -c %s -t 900 -i 30 -b 256k &' % h4.IP())
-        print 'Iperf from %s to %s' % (h5.IP(), h10.IP())
+        print 'Iperf3 from %s to %s' % (h5.IP(), h10.IP())
         h10.cmd('iperf3 -4 -c %s -t 900 -i 30 -b 256k' % h5.IP())
 
         sleep(10)
@@ -375,10 +375,10 @@ class ExerciseRunner:
         sleep(5)
         
         h1.cmd('cp logs/* results/scenario6/tcp/logs/')
-        h1.cmd('./scripts/clean/clean_logs.sh')
+        h1.cmd('../experiments/scripts/clean/clean_logs.sh')
 
         h1.cmd('cp pcaps/* results/scenario6/tcp/pcaps/')
-        h1.cmd('./scripts/clean/clean_pcaps6.sh')
+        h1.cmd('../experiments/scripts/clean/clean_pcaps6.sh')
 
         print '====================================='
         print '    Ending..................   '

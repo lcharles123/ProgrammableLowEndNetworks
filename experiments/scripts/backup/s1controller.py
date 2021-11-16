@@ -186,7 +186,9 @@ def main(p4info_file_path, bmv2_file_path):
             replicas = {
                 2:2,
                 3:3,
-                4:4
+                4:4,
+                5:5,
+                6:6
             })
         s1.WritePRE(mc_group = mc_group_entry)
         print "Installed mgrp on s1."

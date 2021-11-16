@@ -323,12 +323,12 @@ class ExerciseRunner:
         h5.cmd('ping -c10 %s' % h8.IP())
 
         h1.cmd('cp logs/* results/before/scenario5/logs/')
-        h1.cmd('./scripts/clean/clean_logs.sh')
+        h1.cmd('../experiments/scripts/clean/clean_logs.sh')
 
         h1.cmd('cp pcaps/* results/before/scenario5/pcaps/')
-        h1.cmd('./scripts/clean/clean_pcaps.sh')
+        h1.cmd('../experiments/scripts/clean/clean_pcaps.sh')
 
-        h1.cmd('./scripts/clean/clean_scenario5.sh')
+        h1.cmd('../experiments/scripts/clean/clean_scenario5.sh')
         
         print '=========================================='
         print ' Scenario5 UDP - 256k - Payload MTU Bytes '
@@ -351,10 +351,10 @@ class ExerciseRunner:
         sleep(5)
 
         h1.cmd('cp logs/* results/scenario5/udp/logs/')
-        h1.cmd('./scripts/clean/clean_logs.sh')
+        h1.cmd('../experiments/scripts/clean/clean_logs.sh')
 
         h1.cmd('cp pcaps/* results/scenario5/udp/pcaps/')
-        h1.cmd('./scripts/clean/clean_pcaps.sh')
+        h1.cmd('../experiments/scripts/clean/clean_pcaps.sh')
 
         print '=========================================='
         print ' Scenario5 TCP - 256k - Payload MTU Bytes '
@@ -377,10 +377,10 @@ class ExerciseRunner:
         sleep(5)
         
         h1.cmd('cp logs/* results/scenario5/tcp/logs/')
-        h1.cmd('./scripts/clean/clean_logs.sh')
+        h1.cmd('../experiments/scripts/clean/clean_logs.sh')
 
         h1.cmd('cp pcaps/* results/scenario5/tcp/pcaps/')
-        h1.cmd('./scripts/clean/clean_pcaps.sh')
+        h1.cmd('../experiments/scripts/clean/clean_pcaps.sh')
 
         print '====================================='
         print '    Ending..................   '

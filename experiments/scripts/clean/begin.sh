@@ -10,6 +10,13 @@ mkdir results/before/512k
 mkdir results/before/scenario5
 mkdir results/before/scenario6
 mkdir results/before/scenario7
+mkdir results/before/scenario8
+mkdir results/before/scenario9
+mkdir results/before/scenario10
+
+mkdir results/before/scenario9/STD
+mkdir results/before/scenario9/LTP
+
 
 mkdir results/before/scenario5/logs
 mkdir results/before/scenario5/pcaps
@@ -17,6 +24,14 @@ mkdir results/before/scenario6/pcaps
 mkdir results/before/scenario6/logs
 mkdir results/before/scenario7/pcaps
 mkdir results/before/scenario7/logs
+mkdir results/before/scenario8/pcaps
+mkdir results/before/scenario8/logs
+mkdir results/before/scenario9/LTP/pcaps
+mkdir results/before/scenario9/LTP/logs
+mkdir results/before/scenario9/STD/pcaps
+mkdir results/before/scenario9/STD/logs
+mkdir results/before/scenario10/pcaps
+mkdir results/before/scenario10/logs
 
 
 mkdir results/before/64k/LTP
@@ -52,6 +67,9 @@ mkdir results/scenario4
 mkdir results/scenario5
 mkdir results/scenario6
 mkdir results/scenario7
+mkdir results/scenario8
+mkdir results/scenario9
+mkdir results/scenario10
 
 mkdir results/scenario5/tcp
 mkdir results/scenario5/udp
@@ -71,6 +89,34 @@ mkdir results/scenario7/STD
 mkdir results/scenario7/STD/logs
 mkdir results/scenario7/STD/pcaps
 
+mkdir results/scenario8/LTP
+mkdir results/scenario8/LTP/logs
+mkdir results/scenario8/LTP/pcaps
+mkdir results/scenario8/STD
+mkdir results/scenario8/STD/logs
+mkdir results/scenario8/STD/pcaps
+
+mkdir results/scenario9/LTP
+mkdir results/scenario9/LTP/udp
+mkdir results/scenario9/LTP/tcp
+mkdir results/scenario9/LTP/udp/logs
+mkdir results/scenario9/LTP/udp/pcaps
+mkdir results/scenario9/LTP/tcp/logs
+mkdir results/scenario9/LTP/tcp/pcaps
+mkdir results/scenario9/STD
+mkdir results/scenario9/STD/udp
+mkdir results/scenario9/STD/tcp
+mkdir results/scenario9/STD/udp/logs
+mkdir results/scenario9/STD/udp/pcaps
+mkdir results/scenario9/STD/tcp/logs
+mkdir results/scenario9/STD/tcp/pcaps
+
+mkdir results/scenario10/LTP
+mkdir results/scenario10/LTP/logs
+mkdir results/scenario10/LTP/pcaps
+mkdir results/scenario10/STD
+mkdir results/scenario10/STD/logs
+mkdir results/scenario10/STD/pcaps
 
 mkdir results/scenario1/64k
 mkdir results/scenario1/128k
@@ -331,8 +377,3 @@ mkdir results/scenario1/512k/STD/udp/pcaps
 mkdir results/scenario2/512k/STD/udp/pcaps
 mkdir results/scenario3/512k/STD/udp/pcaps
 mkdir results/scenario4/512k/STD/udp/pcaps
-
-
-
-
-

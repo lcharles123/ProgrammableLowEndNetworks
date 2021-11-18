@@ -1,3 +1,0 @@
---2021-11-17 04:43:10--  http://sbrc2010.inf.ufrgs.br/anais/data/pdf/minicursos.pdf
-Resolving sbrc2010.inf.ufrgs.br (sbrc2010.inf.ufrgs.br)... failed: Temporary failure in name resolution.
-wget: unable to resolve host address ‘sbrc2010.inf.ufrgs.br’

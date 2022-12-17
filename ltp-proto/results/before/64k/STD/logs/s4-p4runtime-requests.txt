@@ -1,0 +1,35 @@
+
+[2022-12-16 22:32:36.779] /p4.v1.P4Runtime/SetForwardingPipelineConfig
+---
+Message too long (9417 bytes)! Skipping log...
+---
+
+[2022-12-16 22:32:36.788] /p4.v1.P4Runtime/Write
+---
+device_id: 3
+election_id {
+  low: 1
+}
+updates {
+  type: INSERT
+  entity {
+    packet_replication_engine_entry {
+      multicast_group_entry {
+        multicast_group_id: 2
+        replicas {
+          egress_port: 1
+          instance: 1
+        }
+        replicas {
+          egress_port: 2
+          instance: 1
+        }
+        replicas {
+          egress_port: 3
+          instance: 1
+        }
+      }
+    }
+  }
+}
+---
